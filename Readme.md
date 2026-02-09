@@ -40,7 +40,7 @@ Create a terraform.tfvars file in the root directory. (Note: This file is exclud
 weather_api_key = "YOUR_OPENWEATHER_KEY"
 telegram_token  = "YOUR_TELEGRAM_BOT_TOKEN"
 project_id      = "task10"
-
+```
 ### 2. Deploy Infrastructure
 Initialize and apply the Terraform configuration:
 
