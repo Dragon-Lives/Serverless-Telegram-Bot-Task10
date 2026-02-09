@@ -36,13 +36,13 @@ serverless-telegram-bot/
 
 - Command: /weather <city>
 
- - Functionality: Fetches real-time temperature and conditions from OpenWeatherMap.
+  - Functionality: Fetches real-time temperature and conditions from OpenWeatherMap.
 
 2. Data Persistence:
 
 - Command: /save <note>
 
- -Functionality: Persists user input to DynamoDB.
+  - Functionality: Persists user input to DynamoDB.
 
 3. Cloud Storage:
 
