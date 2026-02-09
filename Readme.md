@@ -48,7 +48,7 @@ serverless-telegram-bot/
 
 - Command: /list
 
- - Functionality: Retrieves file metadata from the S3 bucket.
+  - Functionality: Retrieves file metadata from the S3 bucket.
 
 4. Security:
 
