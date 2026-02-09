@@ -31,7 +31,7 @@ serverless-telegram-bot/
 │
 └── screenshots/            # Evidence for Grading
 ```
-**🚀 Features (Grading Requirements)**
+## 🚀 Features
 1. External API Integration:
 
 - Command: /weather <city>
@@ -54,7 +54,7 @@ serverless-telegram-bot/
 
  - API Keys and Tokens are injected via environment variables (managed by terraform.tfvars), ensuring no secrets are hardcoded.
 
-**🛠 Prerequisites**
+## 🛠 Prerequisites
 - Terraform installed.
 
 - AWS CLI configured with valid credentials.
@@ -63,7 +63,7 @@ serverless-telegram-bot/
 
 - OpenWeatherMap API Key.
 
-**📦 Setup & Deployment**
+## 📦 Setup & Deployment
 1. Configure Secrets
 Create a terraform.tfvars file in the root directory. (Note: This file is excluded from version control for security).
 ```hcl
@@ -93,7 +93,7 @@ Verification that the /save command successfully wrote data ("Final Submission")
 3. Operability (CloudWatch Logs)
 System logs confirming successful Lambda execution and API integration.
 
-**🧹 Cleanup**
+## 🧹 Cleanup
 To remove all resources and avoid AWS charges:
 ```hcl
 terraform destroy -auto-approve
