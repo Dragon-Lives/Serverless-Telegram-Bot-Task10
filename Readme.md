@@ -74,14 +74,15 @@ project_id      = "task10"
 2. Deploy Infrastructure
 Initialize and apply the Terraform configuration:
 
-Bash
+```hcl
 terraform init
 terraform apply -auto-approve
+```
 3. Connect Webhook
 After deployment, Terraform outputs the api_url. Register this with Telegram:
-
-Bash
+```hcl
 curl -F "url=<YOUR_API_URL>" [https://api.telegram.org/bot](https://api.telegram.org/bot)<YOUR_TOKEN>/setWebhook
+```
 📸 Evidence & Verification
 1. Live Bot Interaction
 Demonstration of /weather, /save, and /list commands working in real-time.
@@ -94,7 +95,6 @@ System logs confirming successful Lambda execution and API integration.
 
 🧹 Cleanup
 To remove all resources and avoid AWS charges:
-
-Bash
+```hcl
 terraform destroy -auto-approve
-
+```
