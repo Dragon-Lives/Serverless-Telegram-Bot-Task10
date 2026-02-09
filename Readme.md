@@ -55,13 +55,13 @@ serverless-telegram-bot/
  - API Keys and Tokens are injected via environment variables (managed by terraform.tfvars), ensuring no secrets are hardcoded.
 
 🛠 Prerequisites
-Terraform installed.
+- Terraform installed.
 
-AWS CLI configured with valid credentials.
+- AWS CLI configured with valid credentials.
 
-Telegram Bot Token.
+- Telegram Bot Token.
 
-OpenWeatherMap API Key.
+- OpenWeatherMap API Key.
 
 📦 Setup & Deployment
 1. Configure Secrets
