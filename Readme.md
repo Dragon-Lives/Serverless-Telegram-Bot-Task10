@@ -32,27 +32,27 @@ serverless-telegram-bot/
 └── screenshots/            # Evidence for Grading
 ```
 🚀 Features (Grading Requirements)
-External API Integration:
+1. External API Integration:
 
-Command: /weather <city>
+- Command: /weather <city>
 
-Functionality: Fetches real-time temperature and conditions from OpenWeatherMap.
+ - Functionality: Fetches real-time temperature and conditions from OpenWeatherMap.
 
-Data Persistence:
+2. Data Persistence:
 
-Command: /save <note>
+- Command: /save <note>
 
-Functionality: Persists user input to DynamoDB.
+ -Functionality: Persists user input to DynamoDB.
 
-Cloud Storage:
+3. Cloud Storage:
 
-Command: /list
+- Command: /list
 
-Functionality: Retrieves file metadata from the S3 bucket.
+ - Functionality: Retrieves file metadata from the S3 bucket.
 
-Security:
+4. Security:
 
-API Keys and Tokens are injected via environment variables (managed by terraform.tfvars), ensuring no secrets are hardcoded.
+ - API Keys and Tokens are injected via environment variables (managed by terraform.tfvars), ensuring no secrets are hardcoded.
 
 🛠 Prerequisites
 Terraform installed.
