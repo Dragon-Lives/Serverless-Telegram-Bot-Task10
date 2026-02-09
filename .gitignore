@@ -1,0 +1,8 @@
+# .gitignore
+.terraform/
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+*.zip
+pycache/
+.DS_Store
