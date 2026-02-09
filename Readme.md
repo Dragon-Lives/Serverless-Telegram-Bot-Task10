@@ -93,6 +93,17 @@ Verification that the /save command successfully wrote data ("Final Submission")
 3. Operability (CloudWatch Logs)
 System logs confirming successful Lambda execution and API integration.
 
+## 🌐 External API Integration
+This project integrates with the OpenWeatherMap API to fetch real-time weather data.
+
+* API Provider: OpenWeatherMap (Current Weather Data)
+* Endpoint Used: https://api.openweathermap.org/data/2.5/weather
+* Authentication: API Key passed via query parameter (appid=...). The key is stored securely in AWS Lambda environment variables, not in the source code.
+* Failure Handling:
+    * Timeouts/Connection Errors: The Lambda function includes try-except blocks to catch connection issues. If the API is unreachable, the bot returns a friendly "Service Unavailable" message to the user.
+    * Invalid Cities: If the API returns a 404 Not Found (e.g., for a typo like "Liepzig"), the bot captures this and replies: "City not found. Please check your spelling."
+    * Logging: All API responses (success or failure) are logged to CloudWatch for debugging.
+      
 ## 🧹 Cleanup
 To remove all resources and avoid AWS charges:
 ```hcl
